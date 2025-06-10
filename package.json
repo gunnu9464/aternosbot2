@@ -1,0 +1,17 @@
+{
+  "name": "aternosbot",
+  "version": "1.0.0",
+  "description": "A Minecraft bot for Aternos that stays alive and moves, jumps, and sneaks automatically. Includes a web server for Render/UptimeRobot monitoring.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "mineflayer": "^4.16.0"
+  }
+}
