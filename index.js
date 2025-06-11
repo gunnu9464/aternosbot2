@@ -3,7 +3,7 @@ const mineflayer = require('mineflayer');
 const express = require('express');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3004;
 
 // Web endpoint for UptimeRobot/Render
 app.get('/', (_req, res) => {
@@ -66,5 +66,5 @@ bot.on('spawn', () => {
 bot.on('error', err => console.error('Bot error:', err));
 bot.on('end', () => {
   console.log('Bot disconnected, retrying in 10s...');
-  setTimeout(() => bot.connect(), 1000);
+  setTimeout(() => bot.connect(), 10000);
 });
