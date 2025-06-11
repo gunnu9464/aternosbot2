@@ -66,5 +66,4 @@ bot.on('spawn', () => {
 bot.on('error', err => console.error('Bot error:', err));
 bot.on('end', () => {
   console.log('Bot disconnected, retrying in 10s...');
-  setTimeout(() => bot.connect(), 10000);
 });
